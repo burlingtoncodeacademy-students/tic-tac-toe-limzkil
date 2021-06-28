@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multi Player</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/single-multi-player.css" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+    </style>
+    <title>Play Together!</title>
+  </head>
+  <body>
+    <main>
+      <!-- container for title and nav menu -->
+      <div id="nav-title-box">
+        <!-- container for dropdown of nav menu-->
+        <div class="dropdown">
+          <button class="dropbtn">navigation</button>
+          <!-- container for dropdown content of nav menu-->
+          <div class="dropdown-content">
+            <a href="/index.html">home</a>
+            <a href="/single-player.html">single-player</a>
+            <a href="/multi-player.html">multi-player</a>
+            <a href="/further-education.html">further education</a>
+          </div>
+        </div>
+        <!-- page title -->
+        <h1><a href="/index.html">Tic Tac GROW</a></h1>
+        <h2>Play Together!</h2>
+      </div>
+      <!-- game board container -->
+      <div id="board-container">
+        <!-- game board -->
+        <div id="board">
+          <!-- game board blocks -->
+          <div id="block-0" class="block"></div>
+          <div id="block-1" class="block"></div>
+          <div id="block-2" class="block"></div>
+          <div id="block-3" class="block"></div>
+          <div id="block-4" class="block"></div>
+          <div id="block-5" class="block"></div>
+          <div id="block-6" class="block"></div>
+          <div id="block-7" class="block"></div>
+          <div id="block-8" class="block"></div>
+        </div>
+      </div>
+      <!-- game button container -->
+      <div id="game-btn-contain">
+        <!-- game buttons -->
+        <div class="game-btn" id="restart">
+          <img
+            src="img/restart.png"
+            alt="minimal linear art of an arrow rotating left in a circle. attrib: Freepik @ flaticon.com"
+          />
+        </div>
+        <div class="game-btn" id="play">
+          <img
+            src="img/start.png"
+            alt="minimal linear art of two hands framing a two leaf sprout. attrib: Freepik @ flaticon.com"
+          />
+        </div>
+        <div class="game-btn" id="replay">
+          <img
+            src="img/replay.png"
+            alt="minimal linear art of an arrow rotating right in a circle. attrib: Freepik @ flaticon.com"
+          />
+        </div>
+      </div>
+
+      <footer>
+        Can you copyright nature? Reach out to gaia.sol-system@milkyway.org to
+        find out!
+      </footer>
+    </main>
+  </body>
 </html>
