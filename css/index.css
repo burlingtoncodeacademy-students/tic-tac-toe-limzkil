@@ -1,0 +1,188 @@
+body {
+  background-image: url("/img/bgtile.png");
+}
+
+main {
+  margin: auto;
+  width: 70%;
+  background-color: white;
+}
+
+/* container for nav and title */
+
+#nav-title-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/*title text properties */
+
+#nav-title-box h1 {
+  font-family: "EB Garamond", serif;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 0px 3px 4px #b9b9b9;
+}
+
+#nav-title-box a,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* dropdown button */
+.dropbtn {
+  background-color: #f5f5f5;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 20px;
+  font-family: "EB Garamond", serif;
+  border: none;
+}
+
+/* the container div */
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* dropdown content */
+.dropdown-content {
+  display: none;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* dropdown links */
+.dropdown-content a {
+  display: inline-flex;
+  color: black;
+  font-family: "EB Garamond", serif;
+  font-size: 20px;
+  padding: 1vw 2vh;
+  text-decoration: none;
+}
+
+/* dropdown links hover color */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* hover showing dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* dropdown button changing when hovered */
+.dropdown:hover .dropbtn {
+  background-color: #99ff99;
+}
+
+/*container for why article*/
+#body-box {
+  display: block;
+  width: 50vw;
+  margin: auto;
+  padding: 0 0 2em 0;
+
+  font-family: "EB Garamond", serif;
+  font-size: 1.2rem;
+}
+
+/* container for both buttons */
+.buttons-flexbox {
+  display: flex;
+  flex-basis: 30fr;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* container for specific button */
+.body-button-M {
+  position: relative;
+  width: 15%;
+  margin: 5rem;
+}
+/* button image */
+.body-button-M img {
+  width: 100%;
+  height: auto;
+}
+
+/* placing button in the middle of the img */
+.body-button-M #buttonM {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(8, 126, 194, 0.979);
+  color: rgb(255, 255, 255);
+  font-family: "EB Garamond", serif;
+  font-size: 30px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* container for specific button */
+.body-button-S {
+  position: relative;
+  width: 15%;
+  margin: 5rem;
+}
+/* button image */
+.body-button-S img {
+  width: 100%;
+  height: auto;
+}
+
+/* placing button in the middle of the img */
+.body-button-S #buttonS {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(187, 36, 36);
+  color: white;
+  font-family: "EB Garamond", serif;
+  font-size: 30px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer {
+  font-family: "EB Garamond", serif;
+  font-size: 20px;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* media query for making nav mobile/tiny window friendly*/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .dropbtn {
+    padding-left: 12vw;
+    padding-right: 12vw;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #f5f5f5;
+  }
+
+  .dropdown-content {
+    display: block;
+    text-align: center;
+  }
+
+  .dropdown-content a {
+    display: block;
+  }
+}
